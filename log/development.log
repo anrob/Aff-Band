@@ -18511,3 +18511,77 @@ Started GET "/" for 127.0.0.1 at Tue Jul 13 01:00:14 -0400 2010
 Rendered profiles/_profile.html.erb (8.2ms)
 Rendered acts/index.html.erb within layouts/application (80.7ms)
 Completed 200 OK in 216ms (Views: 86.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 23 11:30:30 -0400 2010
+  Processing by ActsController#index as HTML
+  [1m[36mSQL (2.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAct Load (1.2ms)[0m  SELECT "acts".* FROM "acts"
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+Rendered acts/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 296ms (Views: 74.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 23 11:30:43 -0400 2010
+  Processing by ActsController#index as HTML
+  [1m[35mAct Load (1.7ms)[0m  SELECT "acts".* FROM "acts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)
+Rendered profiles/_profile.html.erb (0.8ms)
+Rendered acts/index.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 162ms (Views: 77.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/acts/onyx" for 127.0.0.1 at Fri Jul 23 11:31:31 -0400 2010
+  Processing by ActsController#show as HTML
+  Parameters: {"id"=>"onyx"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1[0m
+  [1m[35mAct Load (0.5ms)[0m  SELECT "acts".* FROM "acts" WHERE ("acts"."cached_slug" = 'onyx') LIMIT 1
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)[0m
+Rendered profiles/_profile.html.erb (9.0ms)
+Rendered acts/show.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 121ms (Views: 38.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 23 11:31:37 -0400 2010
+  Processing by ActsController#index as HTML
+  [1m[35mAct Load (1.8ms)[0m  SELECT "acts".* FROM "acts"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1[0m
+  [1m[35mProfile Load (0.6ms)[0m  SELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)
+Rendered profiles/_profile.html.erb (8.5ms)
+Rendered acts/index.html.erb within layouts/application (208.2ms)
+Completed 200 OK in 297ms (Views: 215.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 23 12:00:44 -0400 2010
+  Processing by ActsController#index as HTML
+  [1m[36mAct Load (5.2ms)[0m  [1mSELECT "acts".* FROM "acts"[0m
+  [1m[35mUser Load (4.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)[0m
+Rendered profiles/_profile.html.erb (10.5ms)
+Rendered acts/index.html.erb within layouts/application (163.5ms)
+Completed 200 OK in 432ms (Views: 213.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/acts/onyx" for 127.0.0.1 at Fri Jul 23 12:00:48 -0400 2010
+  Processing by ActsController#show as HTML
+  Parameters: {"id"=>"onyx"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1
+  [1m[36mAct Load (0.5ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE ("acts"."cached_slug" = 'onyx') LIMIT 1[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)
+Rendered profiles/_profile.html.erb (8.3ms)
+Rendered acts/show.html.erb within layouts/application (172.9ms)
+Completed 200 OK in 289ms (Views: 192.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 23 12:00:51 -0400 2010
+  Processing by ActsController#index as HTML
+  [1m[36mAct Load (1.7ms)[0m  [1mSELECT "acts".* FROM "acts"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."subdomain" = 'sofresh') LIMIT 1
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE ("profiles"."user_id" = 1)[0m
+Rendered profiles/_profile.html.erb (8.3ms)
+Rendered acts/index.html.erb within layouts/application (111.7ms)
+Completed 200 OK in 194ms (Views: 117.6ms | ActiveRecord: 2.4ms)
