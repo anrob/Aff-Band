@@ -1,0 +1,22 @@
+<% content_for :head do %>
+
+<% end %> 
+<% content_for :profile do %>
+<div>
+<% unless request.subdomain.blank? %>
+    <%= render @profile %> 
+<% end -%>
+</div>
+<% end %> 
+<% #title "Acts" %> 
+  
+          <% @acts.each do |act | %> 
+          <div class="grid_3 actboxes"> 
+               <%= image_tag act.photo.url(:frontpage) %>    
+              <h1 class="actname"><%= link_to act.name, act %></h1> 
+              <p class="description"><%= truncate(act.description, :length => 200) %></p>
+             <div class="visitit"> <%= link_to "View Band", act %>  </div>
+           </div> 
+            <% end -%> 
+      <div class="clear"><!-- clear --></div> 
+

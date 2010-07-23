@@ -1,0 +1,23 @@
+ 
+<% content_for :profile do %>
+<div>
+<% unless request.subdomain.blank? %>
+    <%= render @profile %> 
+<% end -%>
+</div>
+<% end %>
+   <%= image_tag @act.photo.url(:large) %>
+<p>
+  <strong>Name:</strong>
+  <%= @act.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @act.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_act_path(@act) %> |
+  <%= link_to "Destroy", @act, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", acts_path %>
+</p>

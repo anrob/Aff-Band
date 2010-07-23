@@ -1,0 +1,17 @@
+one:
+  business_name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  email: MyString
+  user: 
+
+two:
+  business_name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  email: MyString
+  user: 

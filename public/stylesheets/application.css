@@ -1,0 +1,267 @@
+/* @override 
+	http://sofresh.lvh.me:3000/stylesheets/application.css?1278974531
+	http://sofresh.lvh.me:3000/stylesheets/application.css?1278974627
+*/
+
+body {
+	font-size:13px;
+	font-family:"Lucida Grande", Helvetica, Arial, sans-serif;
+   	line-height:23px;
+	padding-top: 0;
+	margin-top: 0;
+	background: #00467e url(/images/body-background-default2.jpg) scroll center -200px;
+}
+
+.wrapper {
+	/*background: url(/images/bg2.png) repeat-y 18px;*/
+}
+
+h2.business_name {
+	color: white;
+	margin-bottom: 0;
+	font-size: 42px;
+	line-height: 52px;
+	padding-top: 20px;
+	padding-left: 25px;
+}
+
+
+
+h3.tagline {
+	font: 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin: 0;
+	text-transform: lowercase;
+	padding-left: 25px;
+}
+
+div#navbar {
+	height: 50px;
+	color: white;
+
+	background: #000 0 0;
+	font-family: Arial;
+}
+#navbar ul {
+	display: inline-block;
+}
+
+#navbar ul li {
+display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	/*line-height: 50px;*/
+	width: 137px;
+	text-align: center;
+	line-height: 50px;
+}
+
+#navbar ul li a:link {
+		color: #00bdfc;
+	/*line-height: 50px;*/
+	display: block;
+	/*background: url(/images/navhover.jpg) no-repeat center;*/
+	text-decoration: none;
+	font-family: Arial;
+}
+#navbar ul li a:hover, #navbar ul li a:active {
+	/*line-height: 50px;*/
+	display: block;
+	background: url(/images/navhover.jpg) no-repeat center;
+	text-decoration: none;
+	color: #00bdfc;
+	font-weight: bold;
+}
+
+
+
+
+.actboxes img {
+width: 219px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.contact_info {
+	background: url(/images/semiTransparent01.png) repeat;
+		height: 180px;
+	padding-top: 20px;
+	margin: 10px 0 0;
+	text-align: right;
+	line-height: normal;
+	padding-right: 20px;
+	font-family: Arial;
+	/*border: 1px solid #7f7f7f;*/
+}
+
+ul.sociallinks {
+	list-style-type: none;
+}
+
+b.mylabel {
+	color: #8cd0e7;
+}
+
+
+h3.visitus {
+	margin: 10px 0 0;
+	color: #6cf;
+	font-size: 16px;
+}
+
+.business_stuff {
+margin: 0;	
+}
+
+b.phonenumber {
+	color: #afe2e3;
+	background: url(/images/phonebg.png) no-repeat left center;
+	padding-left: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font: normal normal 16px Arial;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+.mainbody, .leftbody {
+	padding-top: 13px;
+	/*background: white url(/images/primary-bg.png) no-repeat;*/
+	color: #e6e6e6;
+	margin: 0;
+}
+.mainbody {
+	padding-left: 8px;
+	margin-top: 22px;
+}
+
+.leftbody {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-right: 14px;
+	color: #134369;
+	height: 1024px;
+}
+
+
+
+.actboxes {
+margin-bottom: 20px;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+h1.actname, h1.actname a {
+	color: #cf6;
+	padding: 0;
+	margin: 0 0 8px;
+	font-size: 26px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	word-spacing: normal;
+}
+
+p.description {
+	
+}
+
+.header {
+	color: white;
+	height: 221px;
+	background: url(/images/notebg.png) no-repeat 180px -53px;
+}
+
+.description {
+	font-size: 12px;
+	line-height: normal;
+	/*color: #4c4c4c;*/
+}
+
+div.visitit {
+	background-color: #c44903;
+	padding: 4px;
+	text-align: center;
+	background-image: url(/images/gradient.png);
+}
+div.visitit a {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer {
+	color: white;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}

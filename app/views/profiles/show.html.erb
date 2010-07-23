@@ -1,0 +1,36 @@
+<% title "Profile" %>
+
+<p>
+  <strong>Business Name:</strong>
+  <%= @profile.business_name %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @profile.address %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @profile.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @profile.state %>
+</p>
+<p>
+  <strong>Zip:</strong>
+  <%= @profile.zip %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @profile.email %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @profile.user.subdomain %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_profile_path(@profile) %> |
+  <%= link_to "Destroy", @profile, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", profiles_path %>
+</p>
